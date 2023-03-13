@@ -9,7 +9,7 @@
     
     <title>Weather</title>
 </head>
-<body onload="hideSideNav(), getLocation()">
+<body onload="hideSideNav()">
     <head>
         <div id="nav-bar">
             <table style="width:100%;">
@@ -44,7 +44,7 @@
         <table id="main" style="width: 100%;">
             <tr>
                 <td id="searchBar">
-                    <input type="text" placeholder="search..">
+                    <input id="searchLoc" type="text" placeholder="search..">
                 </td>
             </tr>
             <tr>
@@ -59,9 +59,6 @@
             </tr>
             <tr>
                 <td id="temperature">
-                    <span>
-                        21&deg;C
-                    </span>
                 </td>
             </tr>
         </table>
