@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* #site-logo {} */
+div#side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+div#side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+div#side-menu a:hover {
+    color: #f1f1f1;
+}
+
+div#side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#sandwich-menu{
+    width: 45%;
+    height: 20px;
+    padding: 0;
+}
+
+#site-logo img {
+    width: 25px;
+    height: 25px;
+}
+
+main {
+    padding: 5% 0;
+    min-height: 100vh;
+    /* height: 90vh; */
+}
+
+#searchBar {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    all: unset;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    border-image: none;
+    border-width: 1px;
+    margin: 0 auto;
+    border: solid 1px gray;
+}
+
+#weather-image, img {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+}
+
+#temperature {
+    height: 25vh;
+    text-align: center;
+    /* padding: 5%; */
+}
+
+span {
+    font-size: 5em;
+}
+
+footer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+@media (max-width: 767px) {
+    /* Hide desktop navbar */
+    #navbar {
+        display: none;
+    }
+
+    /* Show sandwich icon */
+    #sandwich-icon {
+        display: block;
+    }
+
+    /* styles for the navigation menu when collapsed */
+    #sideNav.show {
+        display: none;
+    }
+}

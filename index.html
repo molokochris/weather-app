@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
+    <link rel="icon" type="image" href="assets/images/logo/favicon.ico">
+    
+    <title>Weather</title>
+</head>
+<body onload="hideSideNav(), getLocation()">
+    <head>
+        <div id="nav-bar">
+            <table style="width:100%;">
+                <tr>
+                    <td id="sandwich-menu">
+                        <span onclick="openNav()">
+                            <img style="width: 20px;transform: rotate(180deg);"
+                            src="assets/images/icons/side-menu.svg" alt="open-menu">
+                        </span>
+                    </td>
+                    <td id="site-logo">
+                        <img src="assets/images/logo/logo.png" alt="logo">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </head>
+    <main>
+        <div id="side-menu">
+            <div>
+                <span onclick="closeNav()">
+                    <img style="width: 20px;"
+                        src="assets/images/icons/close-side.svg" alt="logo">
+                </span>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <table id="main" style="width: 100%;">
+            <tr>
+                <td id="searchBar">
+                    <input type="text" placeholder="search..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 id="location" style="padding: 4%; text-align: center;"></h3>
+                </td>
+            </tr>
+            <tr>
+                <td id="weather-image">
+                    <img src="assets/images/weather-conditions/light-mode/sunny.png" alt="weather">
+                </td>
+            </tr>
+            <tr>
+                <td id="temperature">
+                    <span>
+                        21&deg;C
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>
+            created by Moloko Chris Poopedi&copysr;
+        </p>
+    </footer>
+    <script src="assets/js/index.js"></script>
+    <script>
+        let sideDiv = document.getElementById("side-menu");
+        function hideSideNav() {
+            sideDiv.style.display = "none";
+        }
+        function showSideNav() {
+            sideDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
