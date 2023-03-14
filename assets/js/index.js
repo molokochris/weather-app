@@ -13,7 +13,7 @@ searchValEl.addEventListener("keyup", function(event) {
 function initApi () {
 
   let input = searchValEl.value;
-  const apiEndpoint = `http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=3ea1c8d09aeea877d65d2682296ce088`;
+  const apiEndpoint = `//api.openweathermap.org/data/2.5/weather?q=${input}&APPID=3ea1c8d09aeea877d65d2682296ce088`;
 
   console.log(input);
   
